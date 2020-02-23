@@ -55,19 +55,7 @@ class Network(object):
 
 
 def main():
-    l1 = Layer([
-        Perceptron([0, 2], 1),
-        Perceptron([5, 2], 2)
-    ])
-
-    l2 = Layer([
-        Perceptron([5, -2], 0)
-    ])
-
-
-    n = Network([l1, l2])
-    # n = Network.random(2, 3, 1)
-
+    n = Network.random(2, 3, 1)
     print(n.compute([0, 1]))
     return 0
 
